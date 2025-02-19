@@ -218,7 +218,7 @@ function AddProject() {
           </select>
         </div>
         <div className="form-actions">
-          <button type="button" onClick={() => navigate('/')} className="cancel-button">
+          <button type="button" onClick={() => navigate('/')} className="btn-cancel">
             Avbryt
           </button>
           <button type="submit" className="submit-button">
