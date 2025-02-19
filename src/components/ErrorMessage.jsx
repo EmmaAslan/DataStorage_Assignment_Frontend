@@ -1,3 +1,4 @@
+// Använde Claude 3.5 Sonnet för att skapa funktionalitet.
 export function ErrorMessage({ message }) {
     return (
       <div className="error-container">

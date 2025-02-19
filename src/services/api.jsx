@@ -1,4 +1,4 @@
-//Har använt mig av Claude 3.5 Sonnet för att starta upp strukturen till den här filen.
+//Använde Claude 3.5 Sonnet för att skapa funktionalitet.
 import axios from 'axios';
 
 const BASE_URL = 'https://localhost:7155/api/base';

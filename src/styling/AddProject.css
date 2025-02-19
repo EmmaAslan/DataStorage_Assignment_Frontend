@@ -1,7 +1,13 @@
+/* Använde Claude 3.5 Sonnet för att skapa det mesta av styling. */
 .add-project-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  }
+
+  .add-project-container h1 {
+    margin-bottom: 20px;
   }
   
   .project-form {

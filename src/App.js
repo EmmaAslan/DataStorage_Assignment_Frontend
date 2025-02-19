@@ -1,5 +1,6 @@
+// Använde Claude 3.5 Sonnet för att skapa det mesta av funktionalitet.
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import TopBar from './components/TopBar';
 import Projects from './pages/Projects';
 import AddProject from './pages/AddProject';
 import EditProject from './pages/EditProject';
@@ -9,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <TopBar />
         <main className="container">
           <Routes>
             <Route path="/" element={<Projects />} />

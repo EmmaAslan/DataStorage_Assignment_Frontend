@@ -1,3 +1,4 @@
+// Använde Claude 3.5 Sonnet för att skapa det mesta av UI och funktionalitet.
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { projectAPI, customerAPI, projectManagerAPI, serviceAPI, statusTypeAPI } from '../services/api';

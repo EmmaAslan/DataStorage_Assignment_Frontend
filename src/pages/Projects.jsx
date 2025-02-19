@@ -1,3 +1,4 @@
+// Använde Claude 3.5 Sonnet för att skapa det mesta av UI och funktionalitet.
 import { useState, useEffect } from 'react';
 import { projectAPI } from '../services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
