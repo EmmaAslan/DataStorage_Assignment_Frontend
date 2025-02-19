@@ -1,0 +1,13 @@
+.container { 
+  background-color: #535e74;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 1vmin);
+  cursor: default;
+}
+ 
+h1 {
+  margin: 0;
+  color: white;
+}
