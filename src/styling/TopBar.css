@@ -1,6 +1,8 @@
 /* Använde Claude 3.5 Sonnet för att skapa det mesta av styling. */
 .topbar {
-  background-color: #2e333d;
+  /* background-color: #2e333d; */
+  background-color: rgb(51, 43, 56);
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 2rem;
   position: sticky;

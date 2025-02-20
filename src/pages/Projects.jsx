@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { projectAPI } from '../services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faTrash, faCalendarAlt, faUserTie, faCog, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEdit, faTrash, faCalendarAlt, faUserTie, faUser, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import '../styling/Projects.css';
 
@@ -117,14 +117,14 @@ function Projects() {
                   <div className="detail-item">
                     <FontAwesomeIcon icon={faCalendarAlt} className="detail-icon" />
                     <div>
-                      <p>Start: {new Date(project.startDate).toLocaleDateString()}</p>
-                      <p>Slut: {project.endDate ? new Date(project.endDate).toLocaleDateString() : '-'}</p>
+                      <p><b>Start:</b> {new Date(project.startDate).toLocaleDateString()}</p>
+                      <p><b>Slut: </b>{project.endDate ? new Date(project.endDate).toLocaleDateString() : '-'}</p>
                     </div>
                   </div>
                   <div className="detail-item">
-                    <FontAwesomeIcon icon={faCog} className="detail-icon" />
+                    <FontAwesomeIcon icon={faMoneyBill} className="detail-icon" />
                     <div>
-                      <p className="price">Pris: {project.totalPrice.toLocaleString("sv-SE")} kr</p>
+                      <p className="price"><b>Pris: </b> {project.totalPrice.toLocaleString("sv-SE")} kr</p>
                     </div>
                   </div>
                 </div>
@@ -132,14 +132,14 @@ function Projects() {
                   <div className="detail-item">
                     <FontAwesomeIcon icon={faUser} className="detail-icon" />
                     <div>
-                      <p>Kund: {project.customer?.customerName || 'Ingen kund'}</p>
+                      <p><b>Kund:</b> {project.customer?.customerName || 'Ingen kund'}</p>
                       <p className="email">{project.customer?.email || ''}</p>
                     </div>
                   </div>
                   <div className="detail-item">
                     <FontAwesomeIcon icon={faUserTie} className="detail-icon" />
                     <div>
-                      <p>Projektledare: {
+                      <p><b>Projektledare:</b> {
                         project.projectManager?.firstName && project.projectManager?.lastName
                           ? `${project.projectManager.firstName} ${project.projectManager.lastName}`
                           : 'Ingen projektledare'

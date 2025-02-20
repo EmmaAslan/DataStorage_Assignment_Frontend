@@ -1,7 +1,7 @@
 //Använde Claude 3.5 Sonnet för att skapa funktionalitet.
 import axios from 'axios';
 
-const BASE_URL = 'https://localhost:7155/api/base';
+const BASE_URL = 'https://localhost:7155/api';
 
 const api = axios.create({
   baseURL: BASE_URL,

@@ -5,7 +5,7 @@
   max-width: 1400px;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: #535e74;
+  /* background-color: #535e74; */
 }
 
 .projects-header {
@@ -22,7 +22,9 @@
 }
 
 .add-project-btn {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
+  background-color: rgb(69, 58, 75);
+
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -33,7 +35,9 @@
 }
 
 .add-project-btn:hover {
-  background-color: #45a049;
+  /* background-color: #45a049; */
+  background-color: rgb(51, 43, 56);
+
 }
 
 .projects-grid {
@@ -98,25 +102,28 @@
 
 .detail-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
 .detail-icon {
-  color: #6c757d;
+  /* color: #6c757d; */
+  color: rgb(51, 43, 56);
   font-size: 1.2rem;
   margin-top: 0.2rem;
+  width: 22px;
+}
+
+.date-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .detail-item p {
   margin: 0;
   color: #4a5568;
   font-size: 0.95rem;
-}
-
-.price {
-  font-weight: 600;
-  color: #2c3e50;
 }
 
 .email {
